@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unified Web Manager</title>
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+</head>
+<body>
+<div id="loginView" class="center-wrap">
+  <section class="login-card">
+    <div class="brandmark">U</div>
+    <h1>Unified Web Manager</h1>
+    <p>GitPage Manager + Cloudflare DNS Manager dalam satu aplikasi.</p>
+    <form id="loginForm">
+      <label>Password Admin</label>
+      <div class="password-row"><input id="password" type="password" autocomplete="current-password" required placeholder="Masukkan password admin"><button type="button" id="togglePassword">👁</button></div>
+      <button class="primary" id="loginBtn" type="submit">Masuk</button>
+      <div id="error" class="error"></div>
+    </form>
+  </section>
+</div>
+<div id="appView" class="app hidden">
+  <header><div><strong>Unified Web Manager</strong><span>Panel administrasi web</span></div><button id="logoutBtn" class="ghost">Keluar</button></header>
+  <main>
+    <div class="hero"><span class="eyebrow">SATU PANEL</span><h2>Pilih layanan yang ingin dikelola</h2><p>Satu login untuk mengelola GitHub Pages dan Cloudflare.</p></div>
+    <div class="modules">
+      <a class="module" href="gitpage/index.html"><div class="icon">GH</div><div><h3>GitPage Manager</h3><p>Repository, file, GitHub Pages, custom domain, dan pengelolaan website.</p><span>Buka GitPage Manager →</span></div></a>
+      <a class="module" href="cloudflare/index.html"><div class="icon">CF</div><div><h3>Cloudflare DNS Manager</h3><p>DNS record dan Published Application Routes Cloudflare Tunnel.</p><span>Buka Cloudflare Manager →</span></div></a>
+    </div>
+  </main>
+</div>
+<script src="app.js"></script>
+</body></html>
